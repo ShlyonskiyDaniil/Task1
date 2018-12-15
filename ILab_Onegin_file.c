@@ -100,7 +100,7 @@ struct string_buffer* String_buffer_create (void)
     bufpar.buf = NULL;
 
 
-    FILE* Onegin = fopen("Data/Onegin.txt", "r");
+    FILE* Onegin = fopen("Data1/Onegin.txt", "r");
 
     if (Onegin == NULL)
     {
@@ -169,7 +169,7 @@ struct string_buffer Formation (struct string_buffer bufpar)
 
 string* Division (string_buffer* bufpar)
 {
-    struct string* text = (struct stirng*) calloc(bufpar->nstr, sizeof(struct string));
+    struct string* text = (struct string*) calloc(bufpar->nstr, sizeof(struct string));
 
     if (text == NULL)
     {
@@ -225,7 +225,7 @@ void* Array_cpy (string* text, string_buffer* bufpar)
 
 void Onegin_result (string* text, char** sort1, char** sort_alpha, string_buffer* bufpar)
 {
-    FILE* result = fopen ("Data/Onegin_result.txt", "w");
+    FILE* result = fopen ("Data1/Onegin_result.txt", "w");
 
     if (result == NULL) printf("Result can not be opened.\n");
 
