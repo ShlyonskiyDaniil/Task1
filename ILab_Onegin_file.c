@@ -100,8 +100,7 @@ struct string_buffer* String_buffer_create (void)
     bufpar.buf = NULL;
 
 
-    FILE* Onegin = fopen("../Data/Onegin.txt", "r");
-
+    FILE* Onegin = fopen("Data/Onegin.txt", "r");
 
     if (Onegin == NULL)
     {
@@ -226,7 +225,9 @@ void* Array_cpy (string* text, string_buffer* bufpar)
 
 void Onegin_result (string* text, char** sort1, char** sort_alpha, string_buffer* bufpar)
 {
-    FILE* result = fopen ("../Data/Onegin_result.txt", "w");
+    FILE* result = fopen ("Data/Onegin_result.txt", "w");
+
+    if (result == NULL) printf("Result can not be opened.\n");
 
     fprintf (result, "--Rhyme sorting:\n\n\n");
 

@@ -9,12 +9,12 @@
 
 int main()
 {
-    FILE* f1  = fopen("DEDINSKIY.txt", "r");
-    FILE* f2  = fopen("Check.txt", "w");
+    FILE* f1  = fopen("Data/DEDINSKIY.txt", "r");
+    FILE* f2  = fopen("Data/Check.txt", "w");
 
     if (f1 == NULL || f2 == NULL)
     {
-        printf("File did not open.");
+        printf("File can not be opened.\n");
         return 112;
     }
     int R = 0;
