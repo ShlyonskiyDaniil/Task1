@@ -12,6 +12,11 @@ int main()
     FILE* f1  = fopen("DEDINSKIY.txt", "r");
     FILE* f2  = fopen("Check.txt", "w");
 
+    if (f1 == NULL || f2 == NULL)
+    {
+        printf("File did not open.");
+        return 112;
+    }
     int R = 0;
     unsigned long int sum = 0;
     double med = 0;
