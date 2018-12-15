@@ -35,8 +35,5 @@ string* Division (string_buffer*);
 void* Array_cpy (string*, string_buffer*);
 void Onegin_result (string*, char**, char**, string_buffer*);
 
-#include "ILab_Onegin_file.c"
-
 #endif
-
 

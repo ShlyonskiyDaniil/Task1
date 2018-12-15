@@ -1,7 +1,8 @@
 #include "ILab_Onegin.h"
 
 
-int main() {
+int main()
+{
     string_buffer* bufpar_ptr = String_buffer_create();
 
     if (bufpar_ptr == NULL)
